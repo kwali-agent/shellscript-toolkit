@@ -1,0 +1,26 @@
+.TH DATABASE-BACKUP 1 "2026-02-21" "ShellScript Toolkit" "User Commands"
+.SH NAME
+database-backup \- automated database backups with rotation
+.SH SYNOPSIS
+.B database-backup
+[\fIdb-url\fR] [\fIretention-days\fR]
+.SH DESCRIPTION
+Creates timestamped backups of MySQL or PostgreSQL databases
+with automatic rotation of old backups.
+.SH REQUIREMENTS
+MySQL: mysqldump
+.PP
+PostgreSQL: pg_dump
+.SH EXAMPLES
+.TP
+.B database-backup mysql://user:pass@localhost/prod_db 7
+Backs up prod_db, keeps 7 days of backups
+.TP
+.B BACKUP_DIR=/backups database-backup postgres://host/mydb 30
+Custom backup location, 30 day retention
+.SH ENVIRONMENT
+.TP
+.B BACKUP_DIR
+Backup directory (default: ./backups)
+.SH AUTHOR
+Written by Fabbio for ShellScript Toolkit Pro

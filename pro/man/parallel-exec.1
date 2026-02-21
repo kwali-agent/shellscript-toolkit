@@ -1,0 +1,28 @@
+.TH PARALLEL-EXEC 1 "2026-02-21" "ShellScript Toolkit" "User Commands"
+.SH NAME
+parallel-exec \- execute commands in parallel with rate limiting
+.SH SYNOPSIS
+.B parallel-exec
+[\fImax-jobs\fR]
+.PP
+or read commands from stdin:
+.PP
+cat commands.txt | \fBparallel-exec\fR [\fImax-jobs\fR]
+.SH DESCRIPTION
+Executes shell commands in parallel while respecting a maximum
+number of concurrent jobs. Useful for batch processing, scraping,
+distribution, and any task that can be parallelized.
+.PP
+Waits for all jobs to complete before exiting.
+.SH OPTIONS
+.TP
+.B max-jobs
+Maximum concurrent processes (default: 4)
+.SH EXAMPLES
+.B cat urls.txt | parallel-exec 5
+Runs 5 downloads simultaneously from urls.txt
+.SH SEE ALSO
+.BR xargs (1),
+.BR parallel (1) (GNU parallel)
+.SH AUTHOR
+Written by Fabbio for ShellScript Toolkit Pro

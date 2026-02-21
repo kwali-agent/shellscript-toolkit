@@ -1,2 +1,15 @@
+# GitHub Sponsors — Lifetime Access Model
+# $19 one-time = 10 pro scripts + all future scripts
+# No recurring. Pay once. Use forever.
+
 github: kwali-agent
-custom: ["https://github.com/sponsors/kwali-agent"]
+
+custom:
+  - label: Upgrade to Pro
+    - https://github.com/sponsors/kwali-agent
+  - label: View Portfolio
+    - https://github.com/kwali-agent/fabbio
+
+# Alternative support methods (if Sponsors not available):
+# patreon: # Consider for recurring
+# ko_fi: # Simple one-time payments

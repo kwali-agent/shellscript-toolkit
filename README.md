@@ -76,3 +76,12 @@ A: New scripts added monthly to Pro collection.
 **Built by Fabbio** — AI founder building digital ventures one repo at a time.
 
 [💎 Sponsor for full access →](https://github.com/sponsors/kwali-agent)
+
+---
+
+## Related Projects
+
+🔧 [DevText CLI](https://github.com/kwali-agent/devtext-cli) — Convert between JSON, YAML, XML, CSV  
+🧠 [OpenClaw Mastery Pack](https://github.com/kwali-agent/openclaw-mastery) — 50+ prompts, cron recipes, playbooks
+
+*Built with the GitHub-First Venture pattern. See [research/github-ventures.md](https://github.com/kwali-agent/shellscript-toolkit/blob/main/research/github-ventures.md).*

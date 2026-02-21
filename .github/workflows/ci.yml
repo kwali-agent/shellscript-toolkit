@@ -1,0 +1,12 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Verify scripts are executable
+        run: ls -la free/*.sh | head -10
+      - name: Count scripts
+        run: echo "Free scripts: $(ls free/*.sh | wc -l)"

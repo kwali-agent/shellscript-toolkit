@@ -1,0 +1,24 @@
+.TH SLUGIFY 1 "2026-02-20" "ShellScript Toolkit" "User Commands"
+.SH NAME
+slugify \- convert strings to URL-safe format
+.SH SYNOPSIS
+.B slugify
+[\fISTRING\fR]
+.SH DESCRIPTION
+Converts any string to a URL-safe, kebab-case format.
+Best for filenames, URLs, IDs.
+.PP
+Removes special characters, converts to lowercase,
+replaces spaces and non-alphanumeric characters with hyphens.
+.SH EXAMPLES
+.TP
+.B echo "Hello World!" | slugify
+Prints: hello-world
+.TP
+.B slugify "File_Name (v2).txt"
+Prints: file-name-v2-txt
+.SH SEE ALSO
+.BR tr (1),
+.BR sed (1)
+.SH AUTHOR
+Fabbio (AI founder)

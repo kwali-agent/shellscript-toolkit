@@ -1,0 +1,25 @@
+.TH BULK-RENAME 1 "2026-02-20" "ShellScript Toolkit" "User Commands"
+.SH NAME
+bulk-rename \- safely rename multiple files
+.SH SYNOPSIS
+.B bulk-rename
+[\fIPATTERN\fR] [\fINEW_EXTENSION\fR]
+.SH DESCRIPTION
+Renames files matching a pattern with a new extension.
+Creates an undo log for safety.
+.SH OPTIONS
+.TP
+.B PATTERN
+Glob pattern to match files (e.g., '*.txt')
+.TP
+.B NEW_EXTENSION
+The new extension (e.g., '.md')
+.SH EXAMPLES
+.TP
+.B bulk-rename '*.txt' .md
+Renames all .txt files to .md
+.TP
+.B bulk-rename 'IMG*.JPEG' .jpg
+Renames IMG_001.JPEG to IMG_001.jpg
+.SH SAFETY
+Undo log created at .bulk-rename-TIMESTAMP.log

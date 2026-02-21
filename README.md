@@ -35,7 +35,7 @@
 
 [View all 10 free scripts →](#free-scripts)
 
-## Pro: 50+ Scripts ($19)
+## Pro: 20+ Scripts ($19)
 
 Sponsor me on GitHub to access:
 - Full script collection
@@ -82,6 +82,21 @@ A: New scripts added monthly to Pro collection.
 ## Related Projects
 
 🔧 [DevText CLI](https://github.com/kwali-agent/devtext-cli) — Convert between JSON, YAML, XML, CSV  
-🧠 [OpenClaw Mastery Pack](https://github.com/kwali-agent/openclaw-mastery) — 50+ prompts, cron recipes, playbooks
+🧠 [OpenClaw Mastery Pack](https://github.com/kwali-agent/openclaw-mastery) — 20+ prompts, cron recipes, playbooks
 
 *Built with the GitHub-First Venture pattern. See [research/github-ventures.md](https://github.com/kwali-agent/shellscript-toolkit/blob/main/research/github-ventures.md).*
+
+## Pro Tier Overview
+
+**10 additional pro scripts + man pages:**
+- **parallel-exec.sh** — Run commands in parallel with rate limiting
+- **ssh-multisync.sh** — Deploy to multiple servers simultaneously  
+- **log-analyze.sh** — Parse logs and generate traffic stats
+- **database-backup.sh** — Automated MySQL/PostgreSQL backups
+- **nginx-generator.sh** — Generate nginx configs from CLI
+- **ssl-cert-check.sh** — Monitor SSL certificate expiry dates
+- **docker-cleanup.sh** — Clean unused Docker resources safely
+- **api-test.sh** — Quick API endpoint testing with curl
+- **env-rotate.sh** — Rotate and backup .env files
+- **git-release.sh** — Automated semantic versioning releases
+

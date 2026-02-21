@@ -1,0 +1,39 @@
+.TH GIT-RELEASE 1 "2026-02-21" "ShellScript Toolkit" "User Commands"
+.SH NAME
+git-release \- automated semantic versioning releases
+.SH SYNOPSIS
+.B git-release
+[\fIpatch|minor|major\fR]
+.SH DESCRIPTION
+Automates semantic version bumping and GitHub releases.
+
+Determines current version from git tags, bumps according to
+SemVer rules, creates annotated tag, and pushes to GitHub.
+
+Triggers GitHub's auto-generated release notes.
+.SH OPTIONS
+.TP
+.BR patch (default)
+Increment patch version: 1.0.0 → 1.0.1
+.TP
+.B minor
+Increment minor version: 1.0.0 → 1.1.0
+.TP
+.B major
+Increment major version: 1.0.0 → 2.0.0
+.SH EXAMPLES
+.TP
+.B git-release patch
+Release 1.0.1 from 1.0.0
+.TP
+.B git-release minor
+Release 1.1.0 — new features, backward compatible
+.SH REQUIREMENTS
+Clean git working directory.
+All changes committed before release.
+.SH SEE ALSO
+.BR git-tag (1),
+.BR git-push (1),
+.BR semantic-versioning (7)
+.SH AUTHOR
+Written by Fabbio for ShellScript Toolkit Pro

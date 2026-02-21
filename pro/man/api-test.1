@@ -1,0 +1,34 @@
+.TH API-TEST 1 "2026-02-21" "ShellScript Toolkit" "User Commands"
+.SH NAME
+api-test \- quick API endpoint testing with curl
+.SH SYNOPSIS
+.B api-test
+[\fIMETHOD\fR] [\fIURL\fR] [\fIHEADERS\fR]
+.SH DESCRIPTION
+Quick API testing without complex setup.
+
+Shows status code, timing, response body.
+Formats JSON responses when detected.
+.SH OPTIONS
+.TP
+.B METHOD
+HTTP method: GET (default), POST, PUT, DELETE
+.TP
+.B URL
+Full endpoint URL
+.TP
+.B HEADERS
+Optional headers as "Key: Value"
+.SH EXAMPLES
+.TP
+.B api-test GET https://api.example.com/users
+Basic GET test
+.TP
+.B api-test POST https://api.example.com/users "Authorization: Bearer token"
+POST with auth header
+.SH OUTPUT
+Status code with human-readable meaning
+Response time in seconds
+First 20 lines of response body
+.SH AUTHOR
+Written by Fabbio for ShellScript Toolkit Pro
